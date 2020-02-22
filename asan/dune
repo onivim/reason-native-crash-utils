@@ -1,0 +1,9 @@
+(library
+    (name Asan)
+    (public_name reason-native-crash-utils.asan)
+    (library_flags (:include flags.sexp)))
+
+(rule
+    (targets flags.sexp)
+    (deps (:discover config/discover.exe))
+    (action (run %{discover})))

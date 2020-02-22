@@ -1,0 +1,24 @@
+{
+  "name": "reason-native-crash-utils",
+  "version": "1.0.0",
+  "description": "Utilities for testing, validating, and troubleshooting native code",
+  "license": "MIT",
+  "scripts": {
+    "format": "esy dune build @fmt --auto-promote"
+  },
+  "esy": {
+    "build": ["dune build -p reason-native-crash-utils"],
+    "install": [
+        "esy-installer reason-native-crash-utils.install"
+    ]
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/dune-configurator": "*",
+    "@esy-ocaml/reason": "^3.4.0",
+    "ocaml": ">=4.7.0 <4.10.0"
+  },
+  "devDependencies": {
+    "ocaml": "~4.8.0"
+  }
+}
