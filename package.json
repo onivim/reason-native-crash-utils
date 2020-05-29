@@ -7,16 +7,13 @@
     "format": "esy dune build @fmt --auto-promote"
   },
   "esy": {
-    "build": ["dune build -p reason-native-crash-utils"],
-    "install": [
-        "esy-installer reason-native-crash-utils.install"
-    ]
+    "build": "dune build -p #{self.name}"
   },
   "dependencies": {
-    "@opam/dune": "*",
+    "@opam/dune": ">=1.6",
     "@opam/dune-configurator": "*",
     "@esy-ocaml/reason": "^3.4.0",
-    "ocaml": ">=4.7.0 <4.10.0"
+    "ocaml": ">=4.7.0 <4.11.0"
   },
   "devDependencies": {
     "ocaml": "~4.8.0"
