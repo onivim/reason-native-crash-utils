@@ -1,13 +1,13 @@
 {
-  "name": "reason-native-crash-utils",
-  "version": "1.0.0",
+  "name": "@onivim/reason-native-crash-utils",
+  "version": "1.0.1",
   "description": "Utilities for testing, validating, and troubleshooting native code",
   "license": "MIT",
   "scripts": {
     "format": "esy dune build @fmt --auto-promote"
   },
   "esy": {
-    "build": "dune build -p #{self.name}"
+    "build": "dune build -p reason-native-crash-utils"
   },
   "dependencies": {
     "@opam/dune": ">=1.6",
