@@ -1,6 +1,6 @@
 {
   "name": "@onivim/reason-native-crash-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utilities for testing, validating, and troubleshooting native code",
   "license": "MIT",
   "scripts": {
